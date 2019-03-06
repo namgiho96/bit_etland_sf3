@@ -1,12 +1,13 @@
 package com.bit_etland.web.domain;
 
+import org.springframework.stereotype.Component;
+
 import lombok.Data;
 
-@Data
+@Data @Component
 public  class CategoryDTO {
 	@SuppressWarnings("unused")
 	private String categoryID,
 			categoryName,
 			description;
-	
 }

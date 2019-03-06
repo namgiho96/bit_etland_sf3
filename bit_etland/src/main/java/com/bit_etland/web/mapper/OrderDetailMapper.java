@@ -2,8 +2,10 @@ package com.bit_etland.web.mapper;
 
 import java.util.List;
 
-import com.bit_etland.web.domain.OrderDetailDTO;
+import org.springframework.stereotype.Component;
 
+import com.bit_etland.web.domain.OrderDetailDTO;
+@Component
 public interface OrderDetailMapper {
 	public void insertOrderDeail();
 

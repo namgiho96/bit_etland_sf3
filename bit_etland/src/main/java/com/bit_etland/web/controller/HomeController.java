@@ -19,7 +19,7 @@ public class HomeController {
 	static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
 	@RequestMapping(value = "/",method = RequestMethod.GET)
-	public String Home(HttpSession session,HttpServletRequest request) {
+	public String home(HttpSession session,HttpServletRequest request) {
 		logger.info("\n --------- Welcome {} !! ----------","홈컨트롤 들어옴"); //시스템아웃 기능!
 		String ctx = request.getContextPath();
 		session.setAttribute("ctx",ctx);
