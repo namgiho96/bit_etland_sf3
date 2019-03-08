@@ -5,7 +5,11 @@
 <tiles-definitions>
   <definition name="public" template="/WEB-INF/views/layouts/classic.jsp">
 	    <put-attribute name="top" value="/WEB-INF/views/home/top.jsp" />
-	    <put-attribute name="main" value="/WEB-INF/views/home/main.jsp" />
+	    <put-attribute name="nav" value="" />
+	    <put-attribute name="content" value="" />
 	    <put-attribute name="bottom" value="/WEB-INF/views/home/bottom.jsp"/>
+  </definition>
+   <definition name="public:*/*.tiles" extends="public">
+	    <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
   </definition>
 </tiles-definitions>

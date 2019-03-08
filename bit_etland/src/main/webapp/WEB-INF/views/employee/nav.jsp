@@ -15,7 +15,7 @@
 </ul>
 
 <script>
-$('#category').attr('style','cursor:pointer').attr('src','').click(()=>{
+$('#category').attr('style','cursor:pointer').attr('src','').click(function(){
 	location.assign('${ctx}/category.do?page=cate_list');
 });
 </script>
