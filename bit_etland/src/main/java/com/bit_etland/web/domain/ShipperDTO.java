@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data @Component
 public  class ShipperDTO {
-	@SuppressWarnings("unused")
 	private String shipperlID,shipperName,phone;
 
 	

@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data @Component
 public  class ProductDTO {
-	@SuppressWarnings("unused")
 	private String productID,
 	productName,
 	supplierID,

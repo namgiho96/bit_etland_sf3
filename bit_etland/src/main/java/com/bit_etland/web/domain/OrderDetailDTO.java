@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data @Component
 public  class OrderDetailDTO {
-	@SuppressWarnings("unused")
 	private String orderDetailID,orderID,productID,quantity;
 	
 }

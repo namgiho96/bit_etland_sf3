@@ -6,7 +6,6 @@ import lombok.Data;
 
 @Data @Component
 public  class CategoryDTO {
-	@SuppressWarnings("unused")
 	private String categoryID,
 			categoryName,
 			description;
