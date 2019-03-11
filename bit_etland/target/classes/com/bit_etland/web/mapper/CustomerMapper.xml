@@ -4,7 +4,17 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bit_etland.web.mapper.CustomerMapper">
   <select id="selectCustomer" resultType="com.bit_etland.web.domain.CustomerDTO">
-    SELECT * FROM CUSTOMERS WHERE CUSTOMER_ID LIKE #{customerID}
+    SELECT CUSTOMER_ID customerID,
+   					   CUSTOMER_NAME customerName,
+   					   PASSWORD password,
+   					   SSN ,
+   					   PHONE,
+   					   CITY,
+   					   ADDRESS,
+   					   POSTALCODE
+					   FROM CUSTOMERS 
+					   WHERE CUSTOMER_ID LIKE #{customerID}
+					   AND PASSWORD LIKE #{password}
   </select>
   
   <insert
@@ -42,8 +52,8 @@
 		  					   PHONE = #{phone},
 		  					   CITY = #{city},
 		  					   ADDRESS = #{address},
-		  					   POSTALCODE = #{postalCode} WHERE CUSTOMER_ID LIKE #{customerID}
-		  					   												AND PASSWORD LIKE #{password}  
+		  					   POSTALCODE = #{postalCode}
+		  					    WHERE CUSTOMER_ID LIKE #{customerID}
   </update>
   
   <delete
@@ -55,5 +65,4 @@
 		  DELETE FROM CUSTOMERS WHERE LIKE CUSTOMER_ID LIKE #{customerID}
 		  					   		  AND PASSWORD LIKE #{password}  		  
   </delete>
-  
 </mapper>

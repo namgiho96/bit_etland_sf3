@@ -24,15 +24,14 @@
 
 <div class="grid-item" id="content" >
 	검색한 사람의 정보			
-	아이디 ${cust.customerID}<br />
-	이 름  ${cust.customerName} <br />	
-	생년월일 ${cust.ssn}	<br />
+	아이디 ${user.customerID}<br />
+	이 름  ${user.customerName} <br />	
+	생년월일 ${user.ssn}	<br />
 	성별 : 남  <br />
-	전화번호 : ${cust.phone}	<br />	
-	우편번호 : ${cust.postalCode} <br />		
-	주소 : ${cust.city} <br />
-	상세주소 : ${cust.address} <br />
- 
+	전화번호 : ${user.phone}	<br />	
+	우편번호 : ${user.postalCode} <br />		
+	주소 : ${user.city} <br />
+	상세주소 : ${user.address} <br />
 </div>
    <div class="botton_1">
  	<button type="button" id="updata_btn" class="btn">정보수정</button>
@@ -42,7 +41,7 @@
  	<button type="button" id="delete_btn" class="btn">회원탈퇴</button>
  </div>
 <script>
-$('#file_upload_btn').click(()=>{
+$('#file_upload_btn').click(function(){
 	alert('파일업로드 버튼클릭!!')
 	$('#file_form')
  	.attr('method','post')
@@ -51,8 +50,8 @@ $('#file_upload_btn').click(()=>{
 	.submit(); 
 });
 
-$('#updata_btn').click(()=>{
-	location.assign("${ctx}/customer.do?cmd=cust_retrieve&page=update&customerID=${cust.customerID}");
+$('#updata_btn').click(function(){
+	location.assign('${ctx}/move/customer/update');
 });
 
 $('#delete_btn').click(function(){

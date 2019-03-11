@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.bit_etland.web.domain.ProductDTO;
 import com.bit_etland.web.proxy.Proxy;
-@Component
+@Repository
 public interface ProductMapper {
 	public void insertproduct(ProductDTO prod);
 

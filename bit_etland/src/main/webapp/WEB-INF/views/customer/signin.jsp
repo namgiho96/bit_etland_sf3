@@ -14,9 +14,6 @@
 	    
 	    <div class="grid-item" id="item_11"><input type="submit" id="confirm_btn" value='확 인'></div>
 	    <div class="grid-item" id="item_12"><input type="reset" id="cancel_btn" value='취 소'> </div>
-	    <input type="hidden" name="cmd" value="signin" />
-	    <input type="hidden" name="dir" value="category" />
-	    <input type="hidden" name="page" value="main"/>
 	</div>
 </form>
 </div>
