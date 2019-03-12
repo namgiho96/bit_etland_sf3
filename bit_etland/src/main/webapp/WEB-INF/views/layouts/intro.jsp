@@ -15,15 +15,11 @@
 			<div class="grid-item" id="header">
 				<tiles:insertAttribute name="top" />
 			</div>
-		          
-		      
-		      <div>
+		    <div>
 		      	 <tiles:insertAttribute name="content" />
-		      </div>
-		       
-		     
+		    </div>
 		    <div class="grid-item" id="footer">
-	  			<tiles:insertAttribute name="bottom" />
+	  			 <tiles:insertAttribute name="bottom" />
 	    	</div>   	
 	    </div> 
 	</body>

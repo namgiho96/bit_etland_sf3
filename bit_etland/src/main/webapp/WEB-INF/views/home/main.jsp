@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <html lang="en">
 
+<jsp:include page="../layouts/common.jsp"></jsp:include>
 <div class="slider">
     <div class="container">
       <div id="about-slider">
@@ -64,10 +65,10 @@ $('#emp_access').click(function(){
 });
 
 $('#cust_join').click(function(){
-	location.assign('customer.do?cmd=move&page=signup')
+	location.assign('${ctx}/move/customer/customer_signup')
 });
 $('#cust_login').click(function(){
-	location.assign('${ctx}/move/customer/signin')
+	location.assign('${ctx}/move/customer/customer_signin')
 });
 
 $('#oop_access').click(function(){

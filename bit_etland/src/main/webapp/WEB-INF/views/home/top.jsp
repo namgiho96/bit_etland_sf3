@@ -13,7 +13,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-          <a class="navbar-brand" href="index.html">ONES.</a>
+          <a class="navbar-brand" id="home">ONES</a>
         </div>
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -31,6 +31,9 @@
 <script>
 $('#cust_login').click(function(){
 	location.assign('${ctx}/move/customer/signin')
+});
+$('#home').click(function(){
+	location.assign('${ctx}/move/home/main')
 });
 </script>
 

@@ -36,7 +36,7 @@ public class CustomerController {
 			session.addAttribute("user", cust);
 		}
 		return (cust != null) ?
-				"public:customer/detail.tiles"
+				"public:customer/customer_detail.tiles"
 					:				 
 				"public:home/main.tiles";
 	}
@@ -48,7 +48,7 @@ public class CustomerController {
 		cust.setCustomerID(customerID);
 		cust = customerService.retriveCustomer(cust);
 		model.addAttribute("cust",cust);
-		return "public:customer/detail.tiles";
+		return "public:customer/customer_detail.tiles";
 		
 	}
 	
