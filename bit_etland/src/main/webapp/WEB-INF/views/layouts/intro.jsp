@@ -10,22 +10,6 @@
 <!DOCTYPE html>
 <html>
 <jsp:include page="common.jsp"></jsp:include>
-	<body>
-		<div id="wrapper" class="grid-container container-fluid">
-			<div class="grid-item" id="header">
-				<tiles:insertAttribute name="top" />
-			</div>
-		          
-		      
-		      <div>
-		      	 <tiles:insertAttribute name="content" />
-		      </div>
-		       
-		     
-		    <div class="grid-item" id="footer">
-	  			<tiles:insertAttribute name="bottom" />
-	    	</div>   	
-	    </div> 
-	</body>
+	
 </html>
 
