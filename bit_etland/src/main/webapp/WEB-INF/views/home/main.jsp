@@ -1,29 +1,55 @@
-W<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<link rel="stylesheet" href="${css}/home/main.css" />
-    <div class="grid-item" id="left">고객 전용  ${time}<br /><br />
-    	<a href="#" id="cust_join" >회원가입</a><br />
-    	<a href="#" id="cust_login" >로 그 인</a>
+<html lang="en">
+
+<div class="slider">
+    <div class="container">
+      <div id="about-slider">
+        <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators visible-xs">
+            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="${img}/slider_one.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="${img}/slider_one.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="item">
+              <img src="${img}/slider_one.jpg" class="img-responsive" alt="">
+            </div>
+          </div>
+
+          <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+
+          <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+        </div>
+      </div>
     </div>
-    
-    <div class="grid-item" id="right">
-    	직원 전용<br /><br />
-    	<a href="#" id="emp_register" >사원등록</a><br />
-    	<a href="#" id="emp_access">접속승인</a>
-    </div>
-    
-    <div class="grid-item" id="left">고객 전용<br /><br />
-    	<a href="#" id="cust_join" >객체지향</a><br />
-    	<a href="#" id="oop_access" >접속하기</a>
-    </div>
-    
-    <div class="grid-item" id="right">
-    	<a href="#" id="emp_register" >알고리즘 </a><br />
-    	<a href="#" id="algo_access">접속하기</a>
-    </div>
-    
-    
+  </div>
+
+
+
+
+ <section id="feature">
+    <div class="container">
+      <div class="center wow fadeInDown animated"style="visibility: visible; animation-name: fadeInDown;">
+        <h2>ONES</h2>
+        <p class="lead">가상화폐에 혁신을 보여드리겠습니다<br></p>
+      </div>
+      </div>
+  </section>
+
+      
 <script src="${js}oop.js">
 
 </script>

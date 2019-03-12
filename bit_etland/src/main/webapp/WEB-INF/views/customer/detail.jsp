@@ -40,6 +40,7 @@
  <div class="botton_2">
  	<button type="button" id="delete_btn" class="btn">회원탈퇴</button>
  </div>
+ 
 <script>
 $('#file_upload_btn').click(function(){
 	alert('파일업로드 버튼클릭!!')
