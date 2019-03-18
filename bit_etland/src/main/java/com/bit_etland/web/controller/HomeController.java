@@ -21,7 +21,7 @@ public class HomeController {
 	public String home(HttpSession session,HttpServletRequest request) {
 		logger.info("\n --------- Welcome {} !! ----------","홈컨트롤 들어옴"); //시스템아웃 기능!
 		pxy.setContext();
-		return "index.jsp";
+		return "algorithm.jsp";
 	}
 	
 	@RequestMapping("/move/{dir}/{page}")

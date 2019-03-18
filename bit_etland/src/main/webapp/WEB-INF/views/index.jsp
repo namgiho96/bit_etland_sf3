@@ -28,6 +28,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="${js}/app.js"></script>
 </head>
+
 <body>
 	<div class="grid-container">
 <div id="top">
@@ -56,6 +57,7 @@
       </div>
     </nav>
 </div>
+
 			
 <div  id="main">
 <div class="slider">
