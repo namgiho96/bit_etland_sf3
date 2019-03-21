@@ -36,6 +36,7 @@ public class AlgoController {
 		map.put("diff",diff);
 		String result = algoService.arithmeticSequence(map);
 		map.put("result",result);
+		System.out.println("값이 뭐들어왔냐 :::: "+result);
 		return map;
 	}
 		
